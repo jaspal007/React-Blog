@@ -1,13 +1,85 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
+  align-items: center;
+}
+
+.Header {
+  background-color: lightseagreen;
+  width: 100%;
+}
+
+.Nav {
+  height: 6em;
+  background-color: rgb(67, 68, 68);
+  width: 100%;
+  padding-top: 1em;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.Nav input[type="text"] {
+  height: 3em;
+  width: 50%;
+}
+
+.Nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  flex-wrap: nowrap;
+}
+
+.Nav li {
+  display: flex;
+  margin-right: 1em;
+  align-self: flex-start;
+  height: 2.13em;
+  width: 4em;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Nav li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  text-decoration: none;
+}
+
+.Nav li:hover, 
+.Nav li:hover a {
+  color: #333;
+  background-color: #eee;
+}
+
+.Nav li a:hover {
+  color: #333;
+  text-decoration: none;
 }
