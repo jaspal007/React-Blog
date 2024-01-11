@@ -16,11 +16,12 @@ code {
   background-color: gainsboro;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  align-content: start;
+  flex-wrap: wrap;
+  height: 100%;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   min-width: 100vw;
-  align-items: center;
 }
 
 .Header {
@@ -33,6 +34,7 @@ code {
   background-color: rgb(67, 68, 68);
   width: 100%;
   padding-top: 1em;
+  z-index: 1;
 }
 
 .searchForm label {
@@ -73,7 +75,7 @@ code {
   text-decoration: none;
 }
 
-.Nav li:hover, 
+.Nav li:hover,
 .Nav li:hover a {
   color: #333;
   background-color: #eee;
@@ -82,4 +84,66 @@ code {
 .Nav li a:hover {
   color: #333;
   text-decoration: none;
+}
+
+.Home,
+.About,
+.NewPost,
+.Post-Page {
+  /* background-color: hotpink;  */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.Footer {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: end;
+  align-content: center;
+}
+
+.Post{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-bottom: 1px solid gray;
+}
+
+.Post-Heading{
+  color: #333;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.Post-Heading:hover{
+  cursor:pointer;
+  text-shadow: 4px 4px 5px gray;
+}
+
+.Post-Page p{
+  margin: 1em;
+}
+
+.Post-Page button{
+  font-size: 18px;
+  margin: 1em;
+  align-self: start;
+  background-color: red;
+  color: white;
+  height: 2.5em;
+  width: 5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Post-Page button:active{
+  background-color: darkred;
 }

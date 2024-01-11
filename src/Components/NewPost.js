@@ -2,7 +2,7 @@ import React from "react";
 
 const NewPost = () => {
   return (
-    <main>
+    <main className="NewPost">
       <h1>NewPost</h1>
     </main>
   );
