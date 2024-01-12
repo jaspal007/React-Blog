@@ -88,9 +88,8 @@ code {
 
 .Home,
 .About,
-.NewPost,
+.New-Post,
 .Post-Page {
-  /* background-color: hotpink;  */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,15 +99,6 @@ code {
   margin-bottom: auto;
 }
 
-.Footer {
-  /* background-color: green; */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: end;
-  align-content: center;
-}
 
 .Post{
   display: flex;
@@ -146,4 +136,47 @@ code {
 
 .Post-Page button:active{
   background-color: darkred;
+}
+
+.Post-Form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Post-Form input[type='text'], textarea{
+  width: 100%;
+  height: 3em;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.Post-Form textarea{
+  height: 6em;
+}
+
+.Post-Form button{
+  margin: 1em;
+  width: 6em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.Post-Form button:active{
+  background-color: darkgray;
+}
+
+
+.Footer {
+  background-color: lightseagreen;
+  position: static;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: end;
+  align-content: center;
 }
