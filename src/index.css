@@ -30,6 +30,8 @@ code {
 }
 
 .Nav {
+  display: flex;
+  flex-wrap: wrap;
   height: 6em;
   background-color: rgb(67, 68, 68);
   width: 100%;
@@ -44,7 +46,7 @@ code {
 
 .Nav input[type="text"] {
   height: 3em;
-  width: 50%;
+  width: 100%;
 }
 
 .Nav ul {
@@ -65,7 +67,7 @@ code {
   cursor: pointer;
 }
 
-.Nav li a {
+.Nav li a{
   display: flex;
   height: 100%;
   width: 100%;
@@ -89,16 +91,19 @@ code {
 .Home,
 .About,
 .New-Post,
-.Post-Page {
+.Post-Page,
+.Update-Post {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  margin-bottom: auto;
+  margin: auto;
 }
 
+.Home{
+  margin-top: 0px;
+}
 
 .Post{
   display: flex;

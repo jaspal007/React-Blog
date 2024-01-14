@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "iugkblk",
+      "datetime": "January 13, 2024 2:49:57 PM",
+      "body": "lknblblknl",
+      "edited": true
+    },
+    {
+      "id": "2",
+      "title": "lkjn",
+      "datetime": "January 13, 2024 2:48:27 PM",
+      "body": "lkn;nm",
+      "edited": true
+    },
+    {
+      "id": "3",
+      "title": "kjb",
+      "datetime": "January 13, 2024 2:49:44 PM",
+      "body": "poujoi",
+      "edited": false
+    }
+  ]
+}
